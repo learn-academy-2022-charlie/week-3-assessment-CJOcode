@@ -67,12 +67,12 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 ## Looking Ahead: Terms for Next Week
 
-1. Conditional rendering:
+1. Conditional rendering: It is the ability to render components to the user interface if a condition such as true or false is met.
 
-2. Object-oriented programming:
+2. Object-oriented programming: Is a style of coding that involves three main concepts such as classes, inheritance and encapsulation. This all work together by storing data privately, but you can access that data in other places in your code using it characteristics again, All while not effecting the parent components.
 
-3. Ruby:
+3. Ruby: An object-oriented language that is dynamic allowing developers to smoothly create data containers that can be manipulated without affecting the entire program.
 
-4. Ruby blocks:
+4. Ruby blocks: similar to Javascript they hold blocks of code but use different key words to encapsulate the code.
 
-5. Ruby hashes:
+5. Ruby hashes: store key value pairs, everything within the hashes are the values for the key.
