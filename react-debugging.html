@@ -63,22 +63,29 @@
           // No need to change anything ABOVE this line ^
 
           return(
+            // added opening and closing fragments
+            // I move the div segment towards the top
+            // fixed the buttons onClick
+            <> 
             <h1>Draw a Card</h1>
-            <button onClick={}>
-              Click to Draw a Card
-            </button>
-            <button onClick={shuffle}>
-              Return Cards and Shuffle Deck
-            </button>
             <div style={handStyles}>
               {this.state.hand.map((card, index) => {
                 return (
-                  <div style={cardStyles} key={index}>
+                  <div 
+                  style={cardStyles} 
+                  key={index}>
                     {card}
                   </div>
                 )
               })}
             </div>
+            <button onClick={ () => this.drawCard(this.state.suit, this.state.rank)}>
+            Click to Draw a Card
+            </button>
+            <button onClick={ () => this.shuffle()}>  
+              Return Cards and Shuffle Deck
+            </button>
+            </>
           )
         }
       }
