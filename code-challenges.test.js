@@ -16,21 +16,21 @@
 // a) Create a test with expect statements for each of the variables provided.
 
 // a describe method that lists the name of the function OR naming of the particular test.
-// describe("fibSeq", () => {
+describe("fibSeq", () => {
 
-//     // a test/it method, nested within the describe block, that in plain words, describes that the function does.
-//     it("returns an array the length of the input containing the numbers of the Fibonacci sequence.", () => {
+    // a test/it method, nested within the describe block, that in plain words, describes that the function does.
+    it("returns an array the length of the input containing the numbers of the Fibonacci sequence.", () => {
 
-//         const fibLength1 = 6
-//         // Expected output: [1, 1, 2, 3, 5, 8]
-//         const fibLength2 = 10
-//         // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+        const fibLength1 = 6
+        // Expected output: [1, 1, 2, 3, 5, 8]
+        const fibLength2 = 10
+        // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
   
-//       //an expect method, nested within the test block, calling on the fibSeq() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-//       expect(fibSeq(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
-//       expect(fibSeq(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
-//     })
-//   })
+      //an expect method, nested within the test block, calling on the fibSeq() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+      expect(fibSeq(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
+      expect(fibSeq(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+    })
+  })
 
 //  Good failure!
 //   FAIL  ./code-challenges.test.js
@@ -49,21 +49,21 @@
     // Then function will take that number and create a new array that is the length of the number 
     // Once the array length is determined, iterate through the array and replace the values with the fibonacci sequence 
 
-    // const fibSeq = (num) => {
-    //     let numArr = []
-    //     let fibArr = []
-    //     if (num > 2) { 
-    //         for (i=0; i < num; i++)
-    //             numArr.push(num / num)
-    //         }    
-    //         for (i=2; i < numArr.length; i++) {
-    //             numArr[i] = numArr[i - 1] + numArr[i - 2] 
-    //             fibArr.push(numArr[i])
-    //         }
-    //         let finalNumArr = numArr.slice(0,2)
+    const fibSeq = (num) => {
+        let numArr = []
+        let fibArr = []
+        if (num > 2) { 
+            for (i=0; i < num; i++)
+                numArr.push(num / num)
+            }    
+            for (i=2; i < numArr.length; i++) {
+                numArr[i] = numArr[i - 1] + numArr[i - 2] 
+                fibArr.push(numArr[i])
+            }
+            let finalNumArr = numArr.slice(0,2)
 
-    //         return finalNumArr.concat(fibArr)
-    //     }
+            return finalNumArr.concat(fibArr)
+        }
 
     // Tried this problem for over 3 hours and finally found the solution!  
     // PASS  ./code-challenges.test.js
@@ -79,23 +79,23 @@
 // a) Create a test with expect statements for each of the variables provided.
 
 // a describe method that lists the name of the function OR naming of the particular test.
-// describe("onlyOdd", () => {
+describe("onlyOdd", () => {
 
-//     // a test/it method, nested within the describe block, that in plain words, describes that the function does.
-//     it("returns a new array of only odd numbers sorted from least to greatest.", () => {
+    // a test/it method, nested within the describe block, that in plain words, describes that the function does.
+    it("returns a new array of only odd numbers sorted from least to greatest.", () => {
 
-//     const fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
-//     // Expected output: [-9, 7, 9, 199]
+    const fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
+    // Expected output: [-9, 7, 9, 199]
 
-//     const fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
-//     // Expected output: [-823, 7, 23]
+    const fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
+    // Expected output: [-823, 7, 23]
      
   
-//       //an expect method, nested within the test block, calling on the onlyOdd() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-//       expect(onlyOdd(fullArr1)).toEqual([-9, 7, 9, 199])
-//       expect(onlyOdd(fullArr2)).toEqual([-823, 7, 23])
-//     })
-//   })
+      //an expect method, nested within the test block, calling on the onlyOdd() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+      expect(onlyOdd(fullArr1)).toEqual([-9, 7, 9, 199])
+      expect(onlyOdd(fullArr2)).toEqual([-823, 7, 23])
+    })
+  })
 
   // received a good Failure
 //   FAIL  ./code-challenges.test.js
@@ -115,9 +115,9 @@
   // And only pull those index's that hold odd numerical data out from that array using the && operator 
   // Then iterate again through the array and create final array called finalArr with the numbers in order from least to greatest.
 
-//   const onlyOdd = (array) => {
-//     return array.filter(element => typeof element === 'number' && element % 2 !== 0).sort((a,b)=>a-b)
-//   } 
+  const onlyOdd = (array) => {
+    return array.filter(element => typeof element === 'number' && element % 2 !== 0).sort((a,b)=>a-b)
+  } 
 
 //   Code PASSED!
 //   PASS  ./code-challenges.test.js
